@@ -7,7 +7,7 @@ import UpcomingEvent from './jobListing-jobSearch/upcomingEvents'
 
 const JobSection = () => {
     return (
-        <div className='absolute flex  flex-col md:flex-col xl:flex-row  gap-[84px] top-19 left-1 md:top-[120px] md:left-[165px] lg:w-[879px]'>
+        <div className='relative md:absolute flex  flex-col md:flex-col xl:flex-row  gap-[84px] top-19 left-1 md:top-[12%] md:left-[165px] lg:w-[879px]'>
             <div>
                 <JobSearch />
                 <SelectedFilters />

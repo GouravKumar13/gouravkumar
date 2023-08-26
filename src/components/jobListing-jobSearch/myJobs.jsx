@@ -1,5 +1,10 @@
 import React from 'react'
 import techmitelogo from "../../Asset/ProductDesignerLogo.png"
+import Unachademy from "../../Asset/UnacademyLogo.png"
+import TechNovus from "../../Asset/techNovusLogo.png"
+import Udemy from "../../Asset/CeptionLogo.png"
+import ursa from "../../Asset/UrsaLogo.png"
+import sercio from "../../Asset/SercioLogo.png"
 const MyJobs = () => {
 
 
@@ -19,12 +24,25 @@ const MyJobs = () => {
         },
         {
             title: "Product designer",
-            company: "techmint",
-            logoImg: techmitelogo,
+            company: "Unacademy",
+            logoImg: Unachademy,
+            type: "Work From Home",
+            location: "Bangaluru,India",
+            status: "In Process",
+            salary: " ₹60K - ₹80k ",
+            duration: "Per Month"
+
+
+
+        },
+        {
+            title: "UX Designer",
+            company: "TechNovus",
+            logoImg: TechNovus,
             type: "On-site",
             location: "Bangaluru,India",
-            status: "Rejected",
-            salary: " ₹50K - ₹70k ",
+            status: "Selected",
+            salary: " ₹60K - ₹75k ",
             duration: "Per Month"
 
 
@@ -32,12 +50,12 @@ const MyJobs = () => {
         },
         {
             title: "Product designer",
-            company: "techmint",
-            logoImg: techmitelogo,
+            company: "Udemy",
+            logoImg: Udemy,
             type: "On-site",
-            location: "Bangaluru,India",
-            status: "Rejected",
-            salary: " ₹50K - ₹70k ",
+            location: "Delhi,India",
+            status: "In Process",
+            salary: " ₹80K - ₹95k ",
             duration: "Per Month"
 
 
@@ -45,38 +63,25 @@ const MyJobs = () => {
         },
         {
             title: "Product designer",
-            company: "techmint",
-            logoImg: techmitelogo,
+            company: "URSA",
+            logoImg: ursa,
             type: "On-site",
             location: "Bangaluru,India",
-            status: "Rejected",
-            salary: " ₹50K - ₹70k ",
+            status: "Selected",
+            salary: " ₹60K - ₹75k ",
             duration: "Per Month"
 
 
 
         },
         {
-            title: "Product designer",
-            company: "techmint",
-            logoImg: techmitelogo,
-            type: "On-site",
-            location: "Bangaluru,India",
+            title: "UX Designer",
+            company: "Sercio Texh",
+            logoImg: sercio,
+            type: "Hybrid",
+            location: "Delhi,India",
             status: "Rejected",
-            salary: " ₹50K - ₹70k ",
-            duration: "Per Month"
-
-
-
-        },
-        {
-            title: "Product designer",
-            company: "techmint",
-            logoImg: techmitelogo,
-            type: "On-site",
-            location: "Bangaluru,India",
-            status: "Rejected",
-            salary: " ₹50K - ₹70k ",
+            salary: " ₹60K - ₹75k ",
             duration: "Per Month"
 
 
@@ -89,7 +94,7 @@ const MyJobs = () => {
     ]
 
     return (
-        <section className='w-full mt-3 md:mt-[57px]'>
+        <section className='w-full mt-2 md:mt-[57px]'>
             <div className=' hidden md:flex w-full justify-between items-center'>
                 <h1 className='md:text-[34px] leading-[50.7px] font-medium'>My Jobs</h1>
                 <div className='flex flex-col w-[226px] justify-center items-center'>
@@ -104,11 +109,11 @@ const MyJobs = () => {
                 </div>
 
             </div>
-            <div className='mt-[16px]'>
+            <div className='mt-[16px] mb-3 '>
                 <h1 className='text-[20px] leading-[30px] font-medium'>Applications</h1>
-                <div className='mt-2 flex flex-col gap-y-2'>{
+                <div className='mt-2 flex flex-col gap-y-1 '>{
                     Applications.map((item, index) => (
-                        <div key={ index } className='w-[95vw] md:w-[100%] md:py-2 md:px-3 p-1 m-2 md:m-0 flex-col md:flex-row flex justify-between bg-slate-50 drop-shadow-lg rounded-2xl'>
+                        <div key={ index } className='w-[95vw] md:w-[100%] md:py-2 md:px-3 p-1 m-auto  flex-col md:flex-row flex justify-between bg-slate-50 drop-shadow-lg rounded-2xl'>
                             <div className='flex gap-20 md:gap-4 w-[90vw] justify-start md:w-[40%]'>
                                 <img src={ item.logoImg } alt="alt" className='w-[50px] h-[50px] md:w-[65px] md:h-[65px] rounded-xl ' />
                                 <div className='text-start'>
@@ -117,12 +122,12 @@ const MyJobs = () => {
                                     <p className='text-[9px] md:text-[12px] leading-[18px]  text-slate-400'>{ item.location }</p>
                                 </div>
                             </div>
-                            <div className='flex justify-between py-3  items-center w-[50%]'>
+                            <div className='flex justify-between p-3  items-center '>
                                 <div className='flex md:flex-col items-center justify-center h-full'>
                                     <span className="text-[15px] w-[100px] font-medium">{ item.salary }</span>
                                     <span className='text-[10px] w-[80px]'>{ item.duration }</span>
                                 </div>
-                                <div className={ `${item.status === "Rejected" ? "bg-red-300" : item.status === "Selected" ? "bg-green-300" : "bg-yellow-100"} rounded-lg  px-3 ` }>
+                                <div className={ `${item.status === "Rejected" ? "bg-red-300" : item.status === "Selected" ? "bg-green-300" : "bg-yellow-100"} rounded-lg   text-[10px] px-3  ` }>
                                     { item.status }
                                 </div>
 
@@ -136,7 +141,7 @@ const MyJobs = () => {
                 </div>
             </div>
 
-        </section >
+        </section>
     )
 }
 

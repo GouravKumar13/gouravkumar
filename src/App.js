@@ -1,13 +1,20 @@
 import Header from "./components/header";
+import BottomBar from "./components/jobListing-jobSearch/BottomBar";
 import JobSection from "./components/jobSection";
 import SideBar from "./components/sidebar";
 
 function App () {
   return (
-    <div className=" bg-[#D9D9D9] w-full h-fit  ">
+    <div className="relative bg-[#ececec] w-full h-full  ">
       <Header />
-      <SideBar />
+      <div className="hidden md:block">
+        <SideBar />
+      </div>
       <JobSection />
+
+      <BottomBar />
+
+
 
     </div>
   );

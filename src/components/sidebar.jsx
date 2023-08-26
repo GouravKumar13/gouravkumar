@@ -12,12 +12,7 @@ const SideBar
     = () => {
         return (
             <>
-                <div className=' flex fixed bottom-0 w-[100vw] bg-[#22506C]  text-white h-12 md:hidden justify-around  items-center '>
-                    <span> <DashboardOutlinedIcon /></span>
-                    <span><WorkOutlineIcon /></span>
-                    <span><ChatBubbleOutlineOutlinedIcon /></span>
-                    <Badge badgeContent={ 4 } variant='dot' color="warning" ><CalendarMonthOutlinedIcon /></Badge>
-                </div>
+
                 <div className='w-[121.55px] h-[120vh] bg-[#22506C] sticky  md:flex hidden flex-col justify-between py-10 text-white items-center '>
                     <span><MenuIcon sx={ { width: 30, height: 30 } } /></span>
                     <div className='flex flex-col  w-full items-center md:gap-[50px] lg:gap-[45px] md:top-[135px] absolute xl:top-[166px]'>
